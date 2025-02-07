@@ -5,6 +5,7 @@ body {
   margin: 0;
   border: 0;
   font-family: 'Roboto', sans-serif;
+  color: #5e9ea0;
 }
 
 .header {
@@ -13,6 +14,7 @@ body {
   align-items: center;
   background-color: cadetblue;
 }
+
 
 .title {
   padding: 50px 25px;
