@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -15,39 +15,28 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <picture>
-        <source srcset="images/landscape/museum-320x180.jpg,
-        images/landscape/museum-640x360.jpg 2x,
-                        images/landscape/museum-960x540.jpg 3x" media="(max-width: 320px)">
-  
-        <source srcset="images/landscape/museum-480x270.jpg,
-        images/landscape/museum-960x540-2.jpg 2x,
-        images/landscape/museum-1440x811.jpg 3x" media="(max-width: 480px)">
-  
-        <source srcset="images/landscape/museum-720x405.jpg,
-                        images/landscape/museum-1440x811.jpg 2x,
-                        images/landscape/museum-2160x1216.jpg 3x" media="(max-width: 720px)">
-  
-        <source srcset="images/landscape/museum-960x540-3.jpg,
-        images/landscape/museum-1440x811-2.jpg 2x,
-        images/landscape/museum-2880x1621.jpg 3x" media="(max-width: 959px)">
+      <picture>
+      <source 
+        srcset="
+          images/square/museum-960x960.jpg 1x, 
+     images/square/museum-1440x1440.jpg 2x, 
+          images/square/museum-1920x1920.jpg 3x" 
+        media="(min-width: 960px)">
+      
+      <source 
+        srcset="
+          images/landscape/museum-320x180.jpg 320w, 
+    images/landscape/museum-480x270.jpg 480w, 
+           images/landscape/museum-640x360.jpg 640w, 
+          images/landscape/museum-960x540.jpg 960w,
+           images/landscape/museum-1920x1081.jpg 1920w,
+           images/landscape/museum-1440x811-2.jpg 1440w,
+           images/landscape/museum-2160x1216.jpg 2160w"
 
-        <source srcset="images/square/museum-480x480.jpg,
-                        images/square/museum-960x960.jpg 2x,
-                        images/square/museum-1440x1440.jpg 3x" media="(min-width: 960px)">
-  
-        <source srcset="images/square/museum-800x800.jpg,
-                images/square/museum-1600x1600.jpg 2x,
-                        images/square/museum-2400x2400.jpg 3x" media="(min-width: 1600px)">
-  
-        <source srcset="images/square/museum-640x640.jpg,
-                    images/square/museum-1280x1280.jpg 2x,
-                        images/square/museum-1920x1920.jpg 3x" media="(min-width: 1280px)">
-  
-        
-  
-        <img src="images/museum.jpg" alt="placeholder">
-      </picture>
+        sizes="(max-width: 2160px) 100vw, 2160px">
+    
+      <img src="images/landscape/museum-320x180.jpg" alt="Museum image">
+    </picture>
   </header>
 </body>
 
